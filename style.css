@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+    --font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-family: var(--font-family);
+}
+
+label {
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    border: 1px solid #7080904e;
+    outline-color: cornflowerblue;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+button {
+    font-family: var(--font-family);
+}
+
+#add-btn {
+    width: 100%;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 0;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.edit {
+    width: 50px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 7px 0;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.delete {
+    width: 50px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 7px 0;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+textarea {
+    resize: none;
+}
+
+.name,
+.description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.search {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search input {
+    border: 1px solid #7080904e;
+    width: 100%;
+    outline-color: cornflowerblue;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 0;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+ul li {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px repeat(5, 1fr);
+    font-size: 16px;
+    border-bottom: 1px solid #80808033;
+    align-items: center;
+    padding: 10px 0;
+}
+
+ul li:nth-child(1) {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+ul li p {
+    margin: 0 10px;
+}
